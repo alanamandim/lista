@@ -1,0 +1,18 @@
+// implemente aqui sua função
+#include"questao.h"
+
+bool decrementa(list<int> & lcont){
+    int i=0;
+    int y=lcont.size();
+
+    for(auto & x: lcont){
+        if(x!=0){
+            x--;
+        }else i++;
+    }
+    if(i==y){
+        return false;
+    }else {
+        return true;
+    }
+}
